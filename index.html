@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>HOLA MUNDO!!</h1>
+    </div>
+    <section class="contenedorSuma">
+        <button class="botonRestar" onclick="restar()">-</button>
+        <input type="number" id="numero" value="0" disabled>
+        <button class="botonSumar" onclick="sumar()">+</button>
+    </section>
+
+    <section class="contenedorCalculadora">
+        <div class="visor">
+            <div id="resultadoParcial" class="resultadoParcial"></div>
+            <div id="operacionActual" class="operacionActual"></div>
+        </div>
+        <div class="primerFila">
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador">/</button>
+        </div>
+        <div class="segundaFila">
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador">*</button>
+        </div>
+        <div class="terceraFila">
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador">-</button>
+        </div>
+        <div class="cuartaFila">
+            <button class="numero">0</button>
+            <button id="borrarTodo">AC</button>
+            <button id="igual">=</button>
+            <button class="operador">+</button>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
